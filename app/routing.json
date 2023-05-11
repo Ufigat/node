@@ -1,0 +1,10 @@
+{
+  "/get": { "method": [ "GET" ], "controller": "getController"},
+  "/post": { "method": [ "POST" ], "controller": "postController"},
+  "/get-post": { "method": [ "GET", "POST" ], "controller": "anyController"},
+  "/env": { "method": [ "GET" ], "controller": "getEnvController"},
+  "/head": { "method": [ "POST" ], "controller": "postHeaderController"},
+  "/cookie/set": { "method": [ "POST" ], "controller": "postCookieController" },
+  "/cookie/get-all": { "method": [ "GET"], "controller": "getCookiesController" },
+  "/redirect": { "method": [ "POST" ], "controller": "postRedirectController", "redirect": "/get" }
+}
